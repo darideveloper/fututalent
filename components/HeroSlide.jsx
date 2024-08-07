@@ -63,7 +63,7 @@ export default function HeroSlide({ title, subtitle, ctaLink, ctaText, imageSrc 
       >
         {subtitle}
       </p>
-
+      
       <Cta
         link={ctaLink}
         text={ctaText}
@@ -75,7 +75,7 @@ export default function HeroSlide({ title, subtitle, ctaLink, ctaText, imageSrc 
       {/* Image with auto generated src */}
       <Image
         src={imageSrc}
-        alt="Hero"
+        alt="Foto de niños jugando"
         width={1200}
         height={600}
         className={`

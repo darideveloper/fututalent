@@ -1,14 +1,11 @@
 import Hero from "@/sections/Hero"
-import { fontBody } from "@/libs/fonts"
+import About from "@/sections/About"
 
 export default function Home() {
   return (
-    <main
-      className={`
-        ${fontBody.className}
-      `}
-    >
+    <main>
       <Hero />
+      <About />
     </main>
   )
 }
