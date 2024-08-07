@@ -1,13 +1,16 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import Hero from "@/sections/hero";
-
-const inter = Inter({ subsets: ["latin"] });
+import Hero from "@/sections/hero"
+import { fontBody } from "@/libs/fonts"
 
 export default function Home() {
   return (
-    <main>
+    <main
+      className={`
+        ${fontBody.className}
+        container
+        mx-auto
+      `}
+    >
       <Hero />
     </main>
-  );
+  )
 }
