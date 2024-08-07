@@ -5,9 +5,23 @@
 $purple: #671797,
 $white: #eae4ee,
 $purple-light: #9d48d0,
-$purple-dark: #4f0d4f,
+$purple-dark: #200320,
 
 body
   margin: 0
   padding: 0
   background-color: $white
+  color: $purple-dark
+
+html
+  scroll-behavior: smooth
+
+.debug
+  border: 1px solid red
+
+// swipper custom styles
+.swiper-button-next, .swiper-button-prev
+  color: $purple !important
+
+.swiper-pagination-bullet-active
+  background-color: $purple !important

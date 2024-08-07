@@ -1,4 +1,4 @@
-import Hero from "@/sections/hero"
+import Hero from "@/sections/Hero"
 import { fontBody } from "@/libs/fonts"
 
 export default function Home() {
@@ -6,8 +6,6 @@ export default function Home() {
     <main
       className={`
         ${fontBody.className}
-        container
-        mx-auto
       `}
     >
       <Hero />
