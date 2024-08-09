@@ -1,7 +1,7 @@
 import { fontTitle } from '@/libs/fonts' 
 
 import Image from 'next/image'
-import Cta from '@/components/Cta'
+import Button from '@/components/Button'
 
 
 /**
@@ -64,7 +64,7 @@ export default function HeroSlide({ title, subtitle, ctaLink, ctaText, imageSrc 
         {subtitle}
       </p>
       
-      <Cta
+      <Button
         link={ctaLink}
         text={ctaText}
         className={`
