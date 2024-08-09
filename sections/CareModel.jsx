@@ -95,7 +95,6 @@ export default function CareModel() {
                   height={1000}
                   loading="lazy"
                   className={`
-                    image-bg
                     w-full
                     h-full
                     object-cover
