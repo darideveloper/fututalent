@@ -48,7 +48,6 @@ export default function Videos() {
               disableOnInteraction: false,
             }}
             className={`
-              w-full
               mx-auto
               my-12
               px-6
@@ -57,7 +56,22 @@ export default function Videos() {
               items-center
               gap-6 lg:gap-28
               small
+              w-10/12 md:w-full
             `}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+            }}
           >
             {
               videosSrc.map((videoSrc, index) => (
