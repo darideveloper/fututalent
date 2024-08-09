@@ -5,6 +5,7 @@ import ImageFrame from '@/components/ImageFrame'
  * Text image section template
  * 
  * @param {object} props - component props
+ * @param {string} props.id - section id
  * @param {JSX.Element} props.title - section title
  * @param {string} props.imageSrc - image source
  * @param {string} props.imageAlt - image alt text
@@ -12,7 +13,7 @@ import ImageFrame from '@/components/ImageFrame'
  * @param {boolean} props.reverse - reverse image and text order
  * @returns {JSX.Element} Text image section template
  */
-export default function TextImageTamplate({ title, imageSrc, imageAlt, text, reverse = false}) {
+export default function TextImageTamplate({ id, title, imageSrc, imageAlt, text, reverse = false}) {
   return (
     <section 
       className={`
@@ -29,6 +30,7 @@ export default function TextImageTamplate({ title, imageSrc, imageAlt, text, rev
         gap-6
         
       `}
+      id={id}
     >
       <div 
         className={`

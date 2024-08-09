@@ -24,6 +24,7 @@ export default function CareModel() {
         bg-purple-dark
         py-16
       `}
+      id="care-model"
     >
       <div
         className={`

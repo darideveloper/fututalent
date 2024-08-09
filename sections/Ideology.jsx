@@ -14,6 +14,7 @@ export default function Ideology({ }) {
         mx-auto
         my-28
       `}
+      id="ideology"
     >
       <Title
         className={`

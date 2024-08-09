@@ -1,3 +1,4 @@
+import Header from "@/sections/Header"
 import Hero from "@/sections/Hero"
 import About from "@/sections/About"
 import Ideology from "@/sections/Ideology"
@@ -9,15 +10,18 @@ import Contact from "@/sections/Contact"
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
-      <About />
-      <Ideology />
-      <Videos />
-      <Founder />
-      <CareModel />
-      <Importance />
-      <Contact />
-    </main>
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Ideology />
+        <Videos />
+        <Founder />
+        <CareModel />
+        <Importance />
+        <Contact />
+      </main>
+    </>
   )
 }
