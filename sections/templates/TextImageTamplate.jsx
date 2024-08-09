@@ -53,6 +53,7 @@ export default function TextImageTamplate({ title, imageSrc, imageAlt, text, rev
       <ImageFrame 
         src={imageSrc}
         alt={imageAlt}
+        loading="lazy"
       />
       
     </section>

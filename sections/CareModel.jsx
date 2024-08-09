@@ -92,6 +92,7 @@ export default function CareModel() {
                   alt="Foto de niños jugando"
                   width={1000}
                   height={1000}
+                  loading="lazy"
                   className={`
                     image-bg
                     w-full

@@ -80,6 +80,7 @@ export default function Ideology({ }) {
                   alt={`Imagen de ${idelogy.title}`}
                   width={500}
                   height={500}
+                  loading="lazy"
                   className={`
                     duration-500
                     absolute
