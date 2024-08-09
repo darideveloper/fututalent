@@ -11,7 +11,7 @@ import 'swiper/css/pagination'
 
 export default function Videos() {
 
-  const maxVideos = 9
+  const maxVideos = 8
   const videosSrc = Array.from({ length: maxVideos }, (_, i) => `/videos/work-${i + 1}.mp4`) 
 
   return (
@@ -56,6 +56,7 @@ export default function Videos() {
               justify-center
               items-center
               gap-6 lg:gap-28
+              small
             `}
           >
             {
@@ -73,11 +74,14 @@ export default function Videos() {
                     w-full
                     h-full
                     object-cover
-                    opacity-95
+                    opacity-90
                     rounded-lg
                   `}
                   muted
                   loop
+                  autoPlay
+                  lazy="loading"
+                  preload="none"
                 />
               </SwiperSlide>
               ))
