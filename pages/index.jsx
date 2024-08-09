@@ -2,6 +2,7 @@ import Hero from "@/sections/Hero"
 import About from "@/sections/About"
 import Ideology from "@/sections/Ideology"
 import Founder from "@/sections/Founder"
+import CareModel from "@/sections/CareModel"
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <About />
       <Ideology />
       <Founder />
+      <CareModel />
     </main>
   )
 }

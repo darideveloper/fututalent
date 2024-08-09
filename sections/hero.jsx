@@ -19,7 +19,6 @@ export default function Hero({ }) {
         modules={[Navigation, Pagination, A11y, Autoplay]}
         navigation
         pagination={{ clickable: true }}
-        // Run in loop and autoplay
         autoplay={{
           delay: 7000,
           disableOnInteraction: false,
