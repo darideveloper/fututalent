@@ -85,6 +85,7 @@ export default function CareModel() {
                 key={index}
                 className={`
                   bg-white
+                  rounded-lg
                 `}
               >
                 <Image 
@@ -99,6 +100,7 @@ export default function CareModel() {
                     h-full
                     object-cover
                     opacity-95
+                    rounded-lg
                   `}
                 />
               </SwiperSlide>
