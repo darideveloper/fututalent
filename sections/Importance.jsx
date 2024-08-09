@@ -18,7 +18,7 @@ export default function Importance({ }) {
 
     <TextImageTamplate
       title={title}
-      imageSrc="/images/importance.webp"
+      imageSrc="/images/importance-graph.webp"
       imageAlt="Grafica de población economicamente activa"
       text={text}
     />
