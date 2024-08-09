@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import TextImageTamplate from '@/sections/templates/TextImageTamplate'
 
 export default function Founder({ }) {

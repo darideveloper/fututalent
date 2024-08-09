@@ -43,6 +43,7 @@ export default function Ideology({ }) {
                 group
                 bg-purple-light
               `}
+              key={index}
             >
               <div className="overlay">
 
