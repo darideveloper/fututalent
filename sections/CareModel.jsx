@@ -12,7 +12,7 @@ import 'swiper/css/pagination'
 
 export default function CareModel() {
 
-  const maxImages = 8
+  const maxImages = 5
   const imagesSrc = Array.from({ length: maxImages }, (_, i) => `/images/care-${i + 1}.webp`) 
 
   return (
