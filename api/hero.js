@@ -22,5 +22,17 @@ export const heroData = [
     "subtitle": "ayúdalos a crecer",
     "ctaText": "¿Como ayudar?",
     "ctaLink": "#contact",
+  },
+  {
+    "title": "Un niño listo es un niño feliz",
+    "subtitle": "un niño feliz es un niño listo",
+    "ctaText": "Apoyar",
+    "ctaLink": "#contact",
+  },
+  {
+    "title": "Un niño es un ser en potencia",
+    "subtitle": "ayúdalo a ser lo que puede ser",
+    "ctaText": "Apoyar",
+    "ctaLink": "#contact",
   }
 ]
