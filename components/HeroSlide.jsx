@@ -38,7 +38,7 @@ export default function HeroSlide({ title, subtitle, ctaLink, ctaText, imageSrc 
       <h1
         className={`
           ${fontTitle.className}
-          text-5xl
+          text-3xl md:text-5xl
         `}
       >
         {/* Highlight last word */}

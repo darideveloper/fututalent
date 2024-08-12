@@ -118,7 +118,7 @@ export default function Header() {
                 <Link
                   href={item.link}
                   className={`
-                    text-xl
+                    text-md
                     capitalize
                     text-center
                     block

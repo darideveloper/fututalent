@@ -14,7 +14,7 @@ export default function Title ({ children, className }) {
       className={`
         title
         ${fontTitle.className}
-        text-4xl
+        text-3xl
         text-center
         ${className}
       `}
