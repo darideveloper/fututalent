@@ -25,12 +25,15 @@ export default function Header() {
         py-2
       `}
     >
-      <Image 
-        src="/images/logo.webp"
-        alt="Fututalent logo"
-        width={200}
-        height={200}
-      />
+
+      <Link href={'/'}>
+        <Image 
+          src="/images/logo.webp"
+          alt="Fututalent logo"
+          width={200}
+          height={200}
+        />
+      </Link>
 
       <button
         className={`
