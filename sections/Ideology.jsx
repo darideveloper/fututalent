@@ -12,7 +12,7 @@ export default function Ideology({ }) {
         about
         container
         mx-auto
-        my-28
+        mb-28
       `}
       id="ideology"
     >

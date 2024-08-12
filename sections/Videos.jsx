@@ -19,7 +19,7 @@ export default function Videos() {
       className={`
         about
         mx-auto
-        my-28
+        mb-28
         bg-purple-dark
         py-16
       `}

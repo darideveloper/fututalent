@@ -1,19 +1,19 @@
 export const menuItems = [
   {
     "text": "Nosotros",
-    "link": "#ideology",
+    "link": "/about#ideology",
   },
   {
     "text": "Importancia",
-    "link": "#importance",
+    "link": "/care#importance",
   },
   {
     "text": "Modelo de atención",
-    "link": "#care-model",
+    "link": "/care#care-model",
   },
   {
     "text": "Conectando con empresas",
-    "link": "#companies",
+    "link": "/#companies",
   },
   {
     "text": "Contáctanos",
