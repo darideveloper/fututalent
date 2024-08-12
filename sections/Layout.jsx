@@ -1,10 +1,10 @@
-// import Footer from "@/sections/footer"
-import Header from "@/sections/header"
-import Contact from "@/sections/contact"
-import Head from "next/head"
+import Footer from "@/sections/Footer"
+import Header from "@/sections/Header"
+import Contact from "@/sections/Contact"
 
 import { fontBody } from "@/libs/fonts"
 import { metaData } from "@/libs/meta"
+import Head from "next/head"
 
 /**
  * Root layout component.
@@ -13,29 +13,27 @@ import { metaData } from "@/libs/meta"
  * @param {string} props.pageTitle - title of current subpage
  * @returns {JSX.Element} - rendered Root layout
  */
-export default function RootLayout ({children, pageTitle}) {
+export default function Layout ({children, pageTitle}) {
 
   return (
     <>
-      {/* Metadata */}
       <Head>
         <title>{pageTitle ? `${pageTitle} | ${metaData.title}` : metaData.title}</title>
         <meta name="description" content={metaData.description} />
         <meta name="keywords" content={metaData.keywords} />
-        <meta name="author" content={metaData.author} />       
+        <meta name="author" content={metaData.author} />
       </Head>
       <Header />
       <main
         className={`
           w-full
           overflow-x-hidden
-          ${fontBody.className}
         `}
       >
         {children}
       </main>
       <Contact />
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }

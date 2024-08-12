@@ -5,11 +5,10 @@ import Videos from "@/sections/Videos"
 import Founder from "@/sections/Founder"
 import CareModel from "@/sections/CareModel"
 import Importance from "@/sections/Importance"
-import RootLayout from "@/layouts/RootLayout"
 
 export default function Home() {
   return (
-    <RootLayout>
+    <>
       <Hero />
       <About />
       <Ideology />
@@ -17,6 +16,6 @@ export default function Home() {
       <Founder />
       <CareModel />
       <Importance />
-    </RootLayout>
+    </>
   )
 }

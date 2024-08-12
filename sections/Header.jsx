@@ -1,34 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { menuItems } from '@/libs/nav'
 import { fontTitle } from '@/libs/fonts'
 import { useState } from 'react'
 
 
 export default function Header() {
-
-  const headerMenuItems = [
-    {
-      "text": "Nosotros",
-      "link": "#ideology",
-    },
-    {
-      "text": "Importancia",
-      "link": "#importance",
-    },
-    {
-      "text": "Modelo de atención",
-      "link": "#care-model",
-    },
-    {
-      "text": "Conectando con empresas",
-      "link": "#companies",
-    },
-    {
-      "text": "Contáctanos",
-      "link": "#contact",
-    }
-  ]
 
   const [isOpen, setIsOpen] = useState(false)
 
@@ -111,7 +89,7 @@ export default function Header() {
           `}
         >
           {
-            headerMenuItems.map((item, index) => (
+            menuItems.map((item, index) => (
               <li 
                 key={index}
               >
