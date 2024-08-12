@@ -54,7 +54,7 @@ export default function Ideology({ }) {
                     duration-300
                     ${fontTitle.className}
                     text-center
-                    text-3xl
+                    text-5xl
                     font-bold
                     capitalize
                     bg-purple group-hover:bg-transparent
@@ -100,7 +100,7 @@ export default function Ideology({ }) {
               <p
                 className={`
                   text-center
-                  mt-20
+                  mt-28
                   mb-6
                   px-16 md:px-6 lg:px-20
                 `}
