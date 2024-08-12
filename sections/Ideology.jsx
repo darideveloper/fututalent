@@ -28,8 +28,10 @@ export default function Ideology({ }) {
         className={`
           cards-wrapper
           grid
-          grid-cols-1 md:grid-cols-3
+          grid-cols-1
           gap-6
+          max-w-4xl
+          mx-auto
         `}
       >
         {
@@ -66,7 +68,7 @@ export default function Ideology({ }) {
 
                     absolute group-hover:inline-block
                     z-20
-                    top-1/2 group-hover:top-0
+                    top-1/2 group-hover:top-2 md:group-hover:top-8
                     left-1/2 group-hover:left-0
                     transform
                     -translate-x-1/2 group-hover:translate-y-0
@@ -100,8 +102,8 @@ export default function Ideology({ }) {
               <p
                 className={`
                   text-center
-                  mt-28
-                  mb-6
+                  mt-28 md:mt-36
+                  mb-6 md:mb-16
                   px-16 md:px-6 lg:px-20
                 `}
               >
