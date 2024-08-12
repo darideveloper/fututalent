@@ -20,7 +20,6 @@ export default function CareModel() {
       className={`
         about
         mx-auto
-        mt-28
         bg-purple-dark
         py-16
       `}

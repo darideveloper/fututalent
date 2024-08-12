@@ -6,9 +6,9 @@ import Importance from "@/sections/Importance"
 export default function Home() {
   return (
     <>
-      <Videos />
-      <Importance />
       <CareModel />
+      <Importance />
+      <Videos />
     </>
   )
 }
