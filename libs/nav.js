@@ -4,12 +4,12 @@ export const menuItems = [
     "link": "/about#ideology",
   },
   {
-    "text": "Importancia",
-    "link": "/care#importance",
-  },
-  {
     "text": "Modelo de atención",
     "link": "/care#care-model",
+  },
+  {
+    "text": "Importancia",
+    "link": "/care#importance",
   },
   {
     "text": "Conectando con empresas",
