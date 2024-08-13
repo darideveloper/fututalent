@@ -21,15 +21,15 @@ module.exports = {
       "purple-dark": "#2c052c",
       "transparent": "transparent",
     },
-    // fontSize: {
-    //   sm: '1.6rem',
-    //   base: '2rem',
-    //   xl: '2.5rem',
-    //   '2xl': '3.126rem',
-    //   '3xl': '3.906rem',
-    //   '4xl': '4.88rem',
-    //   '5xl': '6.104rem',
-    // }
+    fontSize: {
+      sm: '1.6rem',
+      base: '2rem',
+      xl: '2.5rem',
+      '2xl': '3.126rem',
+      '3xl': '3.906rem',
+      '4xl': '4.88rem',
+      '5xl': '6.104rem',
+    }
   },
   plugins: [],
 };
