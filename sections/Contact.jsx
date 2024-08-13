@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react'
 import { fontTitle } from '@/libs/fonts'
+import { fromCredentials, formHost } from '@/libs/form'
+import { useRouter } from 'next/router'
+import Swal from 'sweetalert2'
 
 import Input from '@/components/Input'
 import Title from '@/components/Title'
@@ -7,12 +10,20 @@ import Title from '@/components/Title'
 
 export default function Contact() {
 
+  // Pages states
+  const router = useRouter()
+  const [currentPage, setCurrentPage] = useState('')
+
+  // Input states
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
   const [company, setCompany] = useState('')
   const [message, setMessage] = useState('')
   const [formReady, setFormReady] = useState(false)
+  const [inputUser, setInputUser] = useState(fromCredentials.user)
+  const [inputApiKey, setInputApiKey] = useState(fromCredentials.apiKey)
+  const [inputRedirect, setInputRedirect] = useState("")
 
   const inputsData = [
     {
@@ -53,6 +64,27 @@ export default function Contact() {
       "value": message,
       "setValue": setMessage
     },
+    {
+      "label": "user",
+      "name": "user",
+      "type": "hidden",
+      "value": inputUser,
+      "setValue": setInputUser
+    },
+    {
+      "label": "api_key",
+      "name": "api_key",
+      "type": "hidden",
+      "value": inputApiKey,
+      "setValue": setInputApiKey
+    },
+    {
+      "label": "redirect",
+      "name": "redirect",
+      "type": "hidden",
+      "value": inputRedirect,
+      "setValue": setInputRedirect
+    }
   ]
 
   useEffect(() => {
@@ -61,6 +93,35 @@ export default function Contact() {
     const allRequiredInputsFilled = requiredInputs.every(inputData => inputData.value)
     setFormReady(allRequiredInputsFilled)
   }, [name, email, phone, company, message])
+
+  // Show alert in thanks page
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setCurrentPage(window.location.href)
+      if (window.location.href.includes('thanks=true')) {
+        Swal.fire({
+          title: 'Gracias por contactarnos',
+          text: 'En breve nos pondremos en contacto contigo',
+          icon: 'success',
+          confirmButtonText: 'Ok'
+        })
+        
+        // Redirect to home after click in "ok"
+        .then((res) => {
+          if (res.isConfirmed) {
+            // Get url without thanks poram
+            const initialUrl = currentPage.split('?')[0]
+            window.location.href = initialUrl
+          }
+        })
+      }
+    }
+  }, [router])
+
+  // Update redirect page
+  useEffect(() => {
+    setInputRedirect(`${currentPage}?thanks=true`)
+  }, [currentPage])
 
   return (
     <section
@@ -83,7 +144,7 @@ export default function Contact() {
       </p>
 
       <form
-        action='.'
+        action={formHost}
         method='POST'
         className={`
           container
@@ -129,6 +190,21 @@ export default function Contact() {
             my-4
           `}
         />
+
+        {/* render hidden inputs */}
+        {
+            inputsData.slice(5, 8).map((inputData, index) => (
+              <Input
+                key={index}
+                label={inputData.label}
+                name={inputData.name}
+                type={inputData.type}
+                required={inputData.required}
+                value={inputData.value}
+                setValue={inputData.setValue}
+              />
+            ))
+          }
 
         <button
           className={`
