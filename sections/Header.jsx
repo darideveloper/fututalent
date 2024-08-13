@@ -111,6 +111,7 @@ export default function Header() {
                     hover:opacity-50
                     lg:hover:text-orange
                   `}
+                  onClick={() => setIsOpen(false)}
                 >
                   {item.text}
                 </Link>
