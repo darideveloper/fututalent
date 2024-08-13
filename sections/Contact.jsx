@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import Swal from 'sweetalert2'
 
 import Input from '@/components/Input'
+import TextArea from '@/components/TextArea'
 import Title from '@/components/Title'
 
 
@@ -32,7 +33,8 @@ export default function Contact() {
       "type": "text",
       "required": true,
       "value": name,
-      "setValue": setName
+      "setValue": setName,
+      "placeholder": "Juan Pérez"
     },
     {
       "label": "Email",
@@ -40,21 +42,24 @@ export default function Contact() {
       "type": "email",
       "required": true,
       "value": email,
-      "setValue": setEmail
+      "setValue": setEmail,
+      "placeholder": "ejemplo@gmail.com"
     },
     {
       "label": "Teléfono",
       "name": "phone",
       "type": "tel",
       "value": phone,
-      "setValue": setPhone
+      "setValue": setPhone,
+      "placeholder": "55 1234 5678"
     },
     {
       "label": "Empresa",
       "name": "company",
       "type": "text",
       "value": company,
-      "setValue": setCompany
+      "setValue": setCompany,
+      "placeholder": "Empresa S.A. de C.V."
     },
     {
       "label": "Mensaje",
@@ -62,7 +67,8 @@ export default function Contact() {
       "type": "text",
       "required": true,
       "value": message,
-      "setValue": setMessage
+      "setValue": setMessage,
+      "placeholder": "Escribe tu mensaje"
     },
     {
       "label": "user",
@@ -129,7 +135,7 @@ export default function Contact() {
         contact
         bg-purple-light
         px-4
-        py-8
+        py-24
         text-center
       `}
       id='contact'
@@ -158,9 +164,9 @@ export default function Contact() {
           className={`
             grid-inputs
             grid
-            grid-cols-1 md:grid-cols-2
+            grid-cols-1 sm:grid-cols-2
             w-full
-            gap-4
+            gap-6
           `}
         >
           {/* Generate grid inputs */}
@@ -174,12 +180,13 @@ export default function Contact() {
                 required={inputData.required}
                 value={inputData.value}
                 setValue={inputData.setValue}
+                placeholder={inputData.placeholder}
               />
             ))
           }
         </div>
 
-        <Input
+        <TextArea
           label={inputsData[4].label}
           name={inputsData[4].name}
           type={inputsData[4].type}
@@ -219,6 +226,7 @@ export default function Contact() {
             rounded-md
             disabled:opacity-50
             duration-300
+            mt-6
           `}
           disabled={!formReady}
         >

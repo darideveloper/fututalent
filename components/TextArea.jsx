@@ -1,5 +1,5 @@
 /**
- * Input component
+ * TextArea component
  * 
  * @param {object} props - component props
  * @param {string} props.label - input label
@@ -11,7 +11,7 @@
  * @param {string} props.className - input class name
  * @returns {JSX.Element} Input component
  */
-export default function Input({label, name, type, required = false, value, setValue, placeholder, className}) {
+export default function TextArea({label, name, type, required = false, value, setValue, placeholder, className}) {
 
   return (
     <div 
@@ -37,7 +37,7 @@ export default function Input({label, name, type, required = false, value, setVa
         {label} {required && <span>*</span>}
       </label>
 
-      <input 
+      <textarea 
         type={type}
         name={name}
         id={`input_${name}`}
@@ -55,6 +55,7 @@ export default function Input({label, name, type, required = false, value, setVa
           focus:ring-4
           focus:ring-purple
           focus:opacity-80
+          h-36
         `}
         onChange={(e) => setValue(e.target.value)}
         value={value}
