@@ -17,6 +17,6 @@ export const menuItems = [
   },
   {
     "text": "Contáctanos",
-    "link": "#contact",
+    "link": "/contact",
   }
 ]

@@ -1,9 +1,7 @@
+import { metaData } from "@/libs/meta"
+
 import Footer from "@/sections/Footer"
 import Header from "@/sections/Header"
-import Contact from "@/sections/Contact"
-
-import { fontBody } from "@/libs/fonts"
-import { metaData } from "@/libs/meta"
 import Head from "next/head"
 
 /**
@@ -32,7 +30,6 @@ export default function Layout ({children, pageTitle}) {
       >
         {children}
       </main>
-      <Contact />
       <Footer />
     </>
   )
