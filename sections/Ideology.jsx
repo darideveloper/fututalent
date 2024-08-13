@@ -45,6 +45,7 @@ export default function Ideology({ }) {
                 cursor-pointer
                 group
                 bg-purple-light
+                py-24
               `}
               key={index}
             >
@@ -104,7 +105,7 @@ export default function Ideology({ }) {
                   text-center
                   mt-28 md:mt-36
                   mb-6 md:mb-16
-                  px-16 md:px-6 lg:px-20
+                  px-6 md:px-6 lg:px-20
                 `}
               >
                 {idelogy.description}
