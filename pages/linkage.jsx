@@ -1,7 +1,7 @@
 import Linkage from "@/sections/Linkage"
 
 
-export default function Linkage() {
+export default function LinkagePage() {
   return (
     <>
       <Linkage />

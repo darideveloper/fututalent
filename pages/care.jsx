@@ -3,7 +3,7 @@ import CareModel from "@/sections/CareModel"
 import Importance from "@/sections/Importance"
 
 
-export default function Home() {
+export default function CarePage() {
   return (
     <>
       <CareModel />
