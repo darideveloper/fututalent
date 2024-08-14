@@ -15,7 +15,7 @@ export default function Founder({ }) {
           text-2xl
         `}
       >
-        <strong>Karen Montes</strong>, fundadora de <strong>fututalent</strong>, es licenciada en Administración y cuenta con un diplomado en la creación, desarrollo y dirección de empresas sociales. Con una profunda pasión por trabajar con niños y jóvenes, Karen se dedica a promover el desarrollo integral de los futuros talentos.
+        <strong>Karen Montes</strong>, fundadora de <strong>Fututalent</strong>, es licenciada en Administración y cuenta con un diplomado en la creación, desarrollo y dirección de empresas sociales. Con una profunda pasión por trabajar con niños y jóvenes, Karen se dedica a promover el desarrollo integral de los futuros talentos.
       </span>
     </>
   )
