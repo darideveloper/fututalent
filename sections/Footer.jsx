@@ -1,5 +1,5 @@
-import { menuItems } from '@/libs/nav'
-import { socialsData } from '@/libs/socials'
+import { menuItems } from '@/data/nav'
+import { socialsData } from '@/data/socials'
 
 import Link from 'next/link'
 

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import { fontTitle } from '@/libs/fonts'
-import { fromCredentials, formHost } from '@/libs/form'
+import { fontTitle } from '@/data/fonts'
+import { fromCredentials, formHost } from '@/data/form'
 import { useRouter } from 'next/router'
 import Swal from 'sweetalert2'
 

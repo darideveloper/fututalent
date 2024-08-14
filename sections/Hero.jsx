@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules'
-import { heroData } from '@/api/hero'
+import { heroData } from '@/data/hero'
 
 import HeroSlide from '@/components/HeroSlide'
 

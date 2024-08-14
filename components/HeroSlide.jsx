@@ -1,4 +1,4 @@
-import { fontTitle } from '@/libs/fonts' 
+import { fontTitle } from '@/data/fonts' 
 
 import Image from 'next/image'
 import Button from '@/components/Button'

@@ -11,5 +11,4 @@ export const idelogyData = [
     "title": "visión",
     "description": "Nuestra visión es ser la organización líder en el desarrollo de planes de vida y carrera para niños y jóvenes egresados de casas hogar en México. Queremos ser reconocidos por nuestra calidad y compromiso con la sociedad."
   }
-
 ]

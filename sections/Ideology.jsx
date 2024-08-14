@@ -1,13 +1,14 @@
-import { idelogyData } from '@/api/ideology'
-import { fontTitle } from '@/libs/fonts'
+import { idelogyData } from '@/data/ideology'
+import { fontTitle } from '@/data/fonts'
 
 import Title from '@/components/Title'
 import Image from 'next/image'
 
 
 export default function Ideology({ }) {
+
   return (
-    <section 
+    <section
       className={`
         about
         container
@@ -24,7 +25,7 @@ export default function Ideology({ }) {
         Nosotros
       </Title>
 
-      <section 
+      <section
         className={`
           cards-wrapper
           grid
@@ -36,7 +37,7 @@ export default function Ideology({ }) {
       >
         {
           idelogyData.map((idelogy, index) => (
-            <article 
+            <article
               className={`
                 card
                 flex
@@ -79,7 +80,7 @@ export default function Ideology({ }) {
                   {idelogy.title}
                 </h3>
 
-                  {/* Dynamic image src */}
+                {/* Dynamic image src */}
                 <Image
                   src={`/images/ideology-${index + 1}.webp`}
                   alt={`Imagen de ${idelogy.title}`}

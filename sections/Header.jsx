@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { menuItems } from '@/libs/nav'
-import { fontTitle } from '@/libs/fonts'
+import { menuItems } from '@/data/nav'
+import { fontTitle } from '@/data/fonts'
 import { useState } from 'react'
 
 

@@ -1,4 +1,4 @@
-import { metaData } from "@/libs/meta"
+import { metaData } from "@/data/meta"
 
 import Footer from "@/sections/Footer"
 import Header from "@/sections/Header"
