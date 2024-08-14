@@ -12,8 +12,8 @@ export const menuItems = [
     "link": "/care#importance",
   },
   {
-    "text": "Conectando con empresas",
-    "link": "/#companies",
+    "text": "Vinculando",
+    "link": "/linkage",
   },
   {
     "text": "Contáctanos",

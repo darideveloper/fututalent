@@ -1,7 +1,7 @@
 import Contact from "@/sections/Contact"
 
 
-export default function Home() {
+export default function Contact() {
   return (
     <>
       <Contact />

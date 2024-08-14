@@ -18,7 +18,7 @@ export default function CareModel() {
   return (
     <section
       className={`
-        about
+        care-model
         mx-auto
         bg-purple-dark
         py-16
