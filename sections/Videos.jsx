@@ -11,7 +11,7 @@ import 'swiper/css/pagination'
 
 export default function Videos() {
 
-  const maxVideos = 8
+  const maxVideos = 5
   const videosSrc = Array.from({ length: maxVideos }, (_, i) => `/videos/work-${i + 1}.mp4`) 
 
   return (
